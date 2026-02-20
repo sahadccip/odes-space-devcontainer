@@ -1,9 +1,17 @@
 {
   "name": "ga2-ad011d",
   "image": "ghcr.io/devcontainers/features/python:1",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
   "extensions": [
     "astral-sh.uv",
     "ms-python.python"
   ],
-  "postCreateCommand": "uv pip install fastapi"
+  "postCreateCommand": "uv pip install fastapi",
+  "settings": {
+    "python.defaultInterpreterPath": "/usr/local/bin/python"
+  }
 }
